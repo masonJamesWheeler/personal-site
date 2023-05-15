@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+% Author : Mason Wheeler
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.0in}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/mason-wheeler-438372198/}{\Large Mason Wheeler}} & Email : \href{mailto:mwheel@uw.edu}{mwheel@uw.edu}\\
+  \href{https://github.com/masonJamesWheeler}{https://github.com/masonJamesWheeler} & Mobile : \href{tel:+13609758555}{+1-360-975-8555} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{Seattle, WA}
+      {Bachelor of Engineering in Electrical and Computer Engineering;  GPA: 3.66}{Sep. 2020 -- Present}
+        \resumeItemListStart
+            \resumeItem{Relevant Coursework}
+            {Data Structures and Parallelism, Computer Architecture, Machine-Learning for Finance, Linear Algebra, Differential Equations, Physics, Calculus, Statistics, and Probability}
+            \resumeItem{Student-Athlete}
+            {Developed strong time management and leadership skills while balancing academic and athletic commitments. Engaged in community outreach, volunteering for Seattle Children's Hospital, fostering interpersonal and public speaking skills.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FieldFlow}{Seattle, WA}
+      {Software Engineer/Founder}{Jan 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Play-Creation}
+          {Created a web application that allows NCAA coaches to create plays and share them with their players and staff. When fully implemented,
+          the application can reduce the time it takes to create a play, add notes, and share it with the team by 80\%.}
+        \resumeItem{Active-Study}
+          {Active Study is a FieldFlow service that allows players to create flashcards and study them using active recall. It leverages FieldFlow's ability
+          to add metadata to plays so that players can filter through thousands of plays and focus on those most relevant.}
+        \resumeItem{PowerPoint}
+            {Created a FieldFlow service that allows coaches to select plays from their team's database and export them into a PowerPoint presentation.}        
+      \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+      
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Transformer-CNN for Stock Trends (TensorFlow / Machine-Learning)}
+      {Developed a hybrid Transformer-CNN model to predict stock price trends using historical stock data and technical indicators. Utilized TensorFlow and Keras in Python for model implementation, and integrated Yahoo Finance API and Pandas for data retrieval and processing. Implemented Random Forest parameter optimization to avoid overfitting. Created shell scripts to automate data updates and model retraining. Achieved an average accuracy of 82\% on untrained data.}
+    \resumeSubItem{Risc-V Pipeline Processor (Verilog / Hardware)}
+      {Designed and implemented a RISC-V pipeline processor using Verilator, and ModelSim. Created a five-stage pipeline with forwarding and hazard detection mechanisms to handle data dependencies. Compiled and executed C code using a generated RISC-V C compiler. Synthesized the design and tested it on a Xilinx FPGA board, achieving a 25\% improvement in execution speed compared to a baseline processor.}
+    \resumeSubItem{Automated Trading Bot (Reinforcement Learning / Python)}
+      {Built an automated trading bot using OpenAI Gym, Python, and Reinforcement Learning. Implemented a Deep Q-Learning algorithm with a Double DQN and Prioritized Experience Replay to train the model on historical stock data. Optimized the model with hyperparameter tuning and achieved an average yearly 2.5\% Beta on the S\&P 500 index. Integrated Alpaca API for executing live trades.}
+    \resumeSubItem{TensorFlow Image Classifier (Deep Learning / Python)}
+      {Created a convolutional neural network (CNN) image classifier using TensorFlow and Python. Trained the model on the CIFAR-10 dataset, achieving a classification accuracy of 87\%. Implemented data augmentation techniques, dropout, and batch normalization to improve the model's ability to generalize and prevent overfitting.}
+    \resumeSubItem{Real-time Object Detection System (Verilog / Hardware)}
+      {Developed a real-time object detection system using Verilog and FPGA. Integrated a pre-trained YOLOv4 (You Only Look Once) model for the detection task. Optimized the system for real-time performance by implementing parallel processing techniques and resource sharing. Demonstrated the system's utility in public safety applications, achieving an average detection accuracy of 85\% on the COCO dataset.}
+    \resumeSubItem{Custom Linux Kernel (Operating Systems / C)}
+      {Built a custom Linux kernel from scratch to gain a deeper understanding of operating system concepts. Implemented essential functionalities such as process scheduling, memory management, and inter-process communication in the C programming language. Tested the kernel on a QEMU virtual machine and documented the development process, including design decisions and debugging techniques.}
+  \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Python (TensorFlow, Keras), Javascript (React, Node.js), C++ (STL, Boost), SQL, Java (Spring, Hibernate), Verilog}
+      \hfill
+      \textbf{Technologies}{: AWS (EC2, S3, Lambda, RDS), GCP (Compute Engine, Cloud Storage), Apache Kafka, Docker, Kubernetes, FPGA, Linux Kernel Development}
+    }
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}

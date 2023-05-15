@@ -1,0 +1,11 @@
+{
+    "articles":
+    [ {
+        "title": "Charting stocks in different Programming Languages",
+        "url": "/articles/stock-charting",
+        "date": "2023-03-01",
+        "tags": ["Python", " Javascript", " Java"," C++", " Finance"],
+        "description": "A comparison and demonstration of different programming languages for ease of use in stock charting."
+    }
+]
+}
