@@ -20,3 +20,6 @@
     <ArticleHeader title = {article.title} description = {article.description} date = {article.date} tags = {article.tags}, url = {article.url} />
 {/each}
 </body>
+<a href = "articles/lecture9">
+    <h1>Lecture 9</h1>
+</a>
