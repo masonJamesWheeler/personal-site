@@ -1,1288 +1,1604 @@
 <h1>
-    okay we're gonna talk quantitative
-    analysis for some of you this might be a
-    refresher for some of you
-    um a lot of this will be new
-    if it is new to you hit pause review the
-    material
-    um
-    rewind watch different videos read the
-    book you have a lot of resources at hand
-    I'm going to try to keep this as simple
-    as possible
-    here is all we're going to cover it's a
-    lot I'm sorry
-    um so hit pause if you want to start
-    your outline for your notes
-    I want to start and talk about data data
-    are really messy and I want to use this
-    example of the introduction survey that
-    you took at the beginning of this class
-    so in that questionnaire you were asked
-    to give your height in centimeters
-    and this is my recommendation to you
-    whenever you're collecting data you want
-    to set up your questionnaire to get the
-    data that you want and so in this case
-    it was an open-ended question and so
-    once you can see on this graphic that
-    some people wrote
-    CM some people didn't write anything
-    some people wrote I am such and such
-    centimeters some people also wrote their
-    um height in feet and inches and so this
-    takes a lot of time to clean up
-    thankfully I was able to use chat gbt
-    and it cleaned up the data for me so
-    that was nice but
-    um this is something you need to think
-    about that you want to make it so easy
-    for people to enter the data that you
-    want to work with
-    another example was in the survey you
-    were asked how many minutes per week do
-    you spend listening to music and
-    in this case being precise would have
-    really helped so don't have high
-    expectations for people even though it
-    was clear in this question how many
-    minutes per week you can see that a lot
-    of people answered in hours
-    um also some people said it gave ranges
-    so
-    don't have our expectations for people
-    even though I said minutes people didn't
-    read it
-    um
-    and when you think about it on my end
-    cleaning the data it ends up taking time
-    right if someone says about an hour per
-    day I have to take the time to try to
-    figure that out I use chat GPT to get
-    some of that but I had to do a lot of it
-    myself so you want to meet people where
-    they're at and when you have a
-    questionnaire you want to Pilot test it
-    so that someone can say to you you know
-    this doesn't make sense to me so in this
-    case for example maybe people think more
-    of their music listening time in terms
-    of hours than minutes or maybe it's just
-    hard for people to recall this
-    information at all and a good example is
-    TV shows
-    in general TV shows with commercials are
-    either a half hour or one hour with
-    commercials that means they're 22 or 44
-    minutes so when you say to someone how
-    much TV did you watch last week they're
-    generally able to come up with that
-    answer because those blocks of time are
-    in half hours or hours music is a lot
-    harder
-    question options matter too by giving
-    people choices rather than letting
-    people type things in it makes it much
-    easier to analyze later so in this
-    example the question asks what's your
-    favorite color and gave a list of a
-    bunch of colors however the downside of
-    giving options like this is that maybe
-    someone's favorite color was missed the
-    list wasn't comprehensive maybe the list
-    was too long and people were overwhelmed
-    by the time they got to the bottom of
-    the list also some things like is there
-    a real difference between blue and navy
-    lavender and purple
-    and the other thing that's challenging
-    with this you're still going to have to
-    manually assign numbers in order to
-    calculate mode later
-    this in this question option about how
-    much do students support husky Athletics
-    this is not a true interval measure
-    because the option choices are not
-    equidistant from each other
-    um but it did allow to have a sort of
-    pseudo interval measure
+    Dick Cavett: Mr. Baldwin,
+    I'm sure you still meet the remark that:
+    "What are the Negroes... why aren't they optimistic?
+    Um... They say, "But it's getting so much better.
+    There are negro mayors,
+    there are negroes in all of sports."
+    There are negroes in politics.
+    They're even accorded the ultimate accolade
+    of being in television commercials now.
+    (audience laugh)
+    - I'm glad you're smiling. - (audience laugh)
+    Is it at once getting much better and still hopeless?
+    I don't think there's much hope for it, you know,
+    to tell you the truth,
+    as long as people are using this peculiar language.
+    It's not a question of what happens to the Negro here,
+    or to the black man here,
+    that's a very vivid question for me, you know,
+    but the real question is what's going to happen to this country.
+    I have to repeat that.
+    ♪ You're damn right, I've got the blues, ♪
+    ♪ From my head down to my shoes ♪
     
-    we're going to use these questions as a
-    basis for understanding so I also wanted
-    just to refresh your mind about what
-    they were
-    so what do we mean when we say
-    statistical analysis this is a method
-    that's used to identify numerical
-    patterns and calculate relationships
-    between and among variables
-    it applies mathematical principles and
-    procedures to analyze interpret and
-    interpret what the data suggests about
-    the phenomena being studied
-    within statistical analysis we have a
-    goal of trying to be parsimonious
-    parsimony is a goal in quantitative
-    research that means that statistical
-    analyzes should provide the simplest
-    possible approach
-    that offers the best explanation of the
-    phenomenon being explored
-    the actual definition of statistics is
-    numerical summaries of data obtained by
-    measurement and computation and there's
-    three kinds of Statistics that we're
-    going to talk about here
-    the first is univariate statistics and
-    this is just looking at the values of
-    one variable at a time like for example
-    the average age of participants
-    or the average number of minutes
-    listening to music
-    this is also called descriptives and
-    we'll talk more about this in a minute
-    bivariate statistics examine
-    relationship between two variables so
-    for example if age is related to the
-    opinion about the character that appears
-    as options when playing video games
-    multivariate statistics are three or
-    more variables
-    so if People's use video games in
-    addition to their age might be linked to
-    their view for desire for more diverse
-    set of playable options so univariate
-    analyzes are used to describe whereas
-    bivariate and multivariate analyzes are
-    used to explain
-    so let's talk about descriptives first
-    univarity analysis AKA descriptives this
-    is just an efficient way to describe
-    quantitative data these organize and
-    summarize the data so that we can
-    understand it better
-    it's condensed to the some numerical
-    indicator that best summarizes the data
-    set it might be the typical point in a
-    data set or the best representation
-    the three most common forms of
-    descriptives that we'll see are first
-    frequencies which are the percentages of
-    each category measures of central
-    tendency which we'll talk about in a
-    minute and then measures of dispersion
-    aggregation is another way to understand
-    descriptives usually in quantitative
-    research data are drawn individually so
-    each person that participates in a
-    survey or an experiment we have data
-    about them as an individual or in a
-    Content analysis each little piece of
-    communication content
-    and then when we do statistical analyzes
-    we're not actually that interested in
-    individual answers we're interested in
-    the aggregate aggregation is the
-    combined forms
-    of individual data points about whom or
-    which conclusions are drawn so for
-    example let's say there was an
-    experiment where there was subgroups
-    defined by gender identity of the
-    participants
-    and if men and women respond differently
-    then the difference is based on the
-    aggregation of the sample by gender if
-    we don't Aggregate and do these
-    summaries of data points and
-    interpretation this data that we have
-    like a bunch of rows just doesn't make
-    any sense
-    however by focusing on Aggregates there
-    is a downside that we could fail to
-    notice that if there are exceptional or
-    extreme cases but in general with most
-    statistical analyzes we're thinking
-    about aggregation
-    so frequencies this is what you're
-    asking about what's going on this
-    provokes the why question
-    frequencies are fundamental to
-    understanding you need to run the
-    frequencies for every variable that you
-    have it shows the number of cases in
-    each variable category or level
-    um it's everything that is not anonymous
-    value
-    often displayed as percentages which
-    percentages of course are numbers of
-    cases divided by the total and this
-    allows us to compare against categories
-    so here's an example of some frequencies
-    in that survey that you did at the
-    beginning of the quarter you were asked
-    to list what your favorite TV show was
-    when you were six years old
-    this is an analysis of 83 students 59
-    shows were mentioned and this is really
-    interesting I think 23 of you said that
-    SpongeBob SquarePants was your favorite
-    show and you can see that that was by
-    far the most popular show
-    followed by Hannah Montana the Pokemon
-    um Tom and Jerry
-    Dora the Explorer and then it goes down
-    from there
-    so this is a frequency table that lets
-    us know how often these things occurred
-    so that we can have a sense of what
-    happened with the data
-    measures of central tendency
-    um I know it's confusing because they
-    all start with m whatever trick you need
-    from school use it these are the
-    expressions of the most common values
-    within a set of values of a variable
-    the mean which is also known as the
-    average is dividing the sum of observed
-    values by the number of cases so for
-    example if I have a bunch of test scores
-    let's say I have 25 students I add up
-    all their scores and I divide it by 25
-    and that gives me the mean or the
-    average
-    the mean as a measure is sensitive to
-    outliers and extreme cases we're going
-    to look at some examples of this in a
-    minute
-    median is the midpoint of a distribution
-    so you line up all the scores from
-    lowest to highest
-    and the median is the midpoint basically
-    you divide it in half
-    it is not sensitive to outliers we'll
-    look at this again in a moment
-    mode is the measure that occurs or the
-    value that occurs most frequently in the
-    data set
-    so with those levels of measurement that
-    you had
-    if you have nominal data you need to
-    present the mode if you have ordinal
-    data present the median interval ratio
-    data generally you present the mean but
-    there are exceptions and we're going to
-    talk about those in a minute
-    we also need to talk a little bit about
-    skew we learned about the normal
-    distribution
-    a while back
-    um you can see here that this one in the
-    middle has the normal distribution
-    normal distribution
-    I mean meat and mode are all in the
-    middle
-    if there is a positive skew to the data
-    so go up and over you can see that the
-    mean is going to be higher because the
-    mean is sensitive to outliers if there's
-    a negative skew to the data you can see
-    that the mean is on the other side
-    um
-    when we have outliers it skews the mean
-    and so the median is our preferred
-    measure when we have outliers we'll look
-    at an example of that in a minute
-    so from our class data set 84 students
-    reported their height in centimeters I I
-    do want to say that I think that someone
-    might have reported their height in
-    inches because there was one value that
-    was quite low here I don't know but it
-    might have altered the data in this case
-    our mean height in centimeters was 171.0
+    ♪ You're damn right, I've got the blues, ♪
+    ♪ From my head down to my shoes ♪
     
-    the median was 172.36 and the mode the
-    most frequent was 165 and you can see
-    that these sort of all cluster around
-    the mean
-    and I should also mention that height in
-    centimeters is a ratio because there is
-    no true zero
-    so when do we use mean versus median
-    this is a really important question
-    as I said
-    the mean is sensitive to outliers in
-    extreme cases because it's the sum
-    divided by the number of values whereas
-    median is not sensitive to outliers
-    so let's imagine that there's a room of
-    20 Ordinary People and you walk into
-    this party or this room and you have to
-    guess their mean and median income
-    in general you know borrowing something
-    strange going on we'd probably guess the
-    mean and median to be pretty similar
-    because we're assuming there's no
-    extreme outliers in the room so let's
-    say that we guess the mean income is 50
-    000 per year and the median is 45 000
-    per year
-    and then a billionaire walks into the
-    room this person makes one million
-    dollars a year
-    what will happen to the mean income
-    remember the mean is sensitive
-    to outliers and again remember mean
-    would be adding up everything
-    dividing it by the number of people
-    so the Billionaire's income will heavily
-    skew the mean and will increase the mean
-    significantly so you take that 50
-    000
-    let's say times 20 people add a billion
-    dollars divide it by 21 people now and
-    now you have a mean income of 50 million
-    dollars instead of a mean income of 50
-    000 right so you can see that this
-    really screwed up the mean and it's hard
-    to know what's going on in the room
-    because that one billionaire really
-    messed it up
-    so this is not a good representation of
-    income but the median on the other hand
-    is not going to be affected by the
-    Billionaire's income because it's still
-    going to be the middle value so you can
-    see when you're talking about income in
-    this way the looking at median is a lot
-    more helpful than looking at mean and
-    you'll notice if you hear on the news
-    that they talk about incomes in Seattle
-    or incomes in the United States or
-    something they will report using the
-    median
-    I also want to talk about histograms
-    these are useful ways of looking at data
-    when we talked about sampling we use an
-    example of a histogram from penguin
-    flipper lengths
-    if you remember
-    um and this is just a way of looking at
-    if the variable is skewed or not or in
-    what direction by visualizing the
-    distribution this is our height in
-    centimeters
-    the x-axis will display the values of
-    the variable cells and the y-axis
-    displays the corresponding frequencies
-    histograms use bars to represent values
-    so you can see like here this is like
-    151 to 153 in here with different
-    heights of the bars indicating the
-    frequency that the values appear in that
-    block of data
-    okay so variability
-    this is
-    remember we talked about frequencies we
-    talked about measures of central
-    tendency variability is the degree to
-    which values are spread out or clustered
-    together
-    the range is just subtracting the
-    smallest value from the largest and
-    usually we report range fully so for
-    example let's say you did a study of
-    people in the age range was 18 to 65.
-    usually people report that whole range
-    standard deviation is a very important
-    part of variability standard deviation
-    tells you how much the individual data
-    values deviate from the mean it is the
-    average spread of values around the mean
-    a big standard deviation tells you that
-    something might be up with your data
-    things are not very consistent and
-    values are more spread out a small
-    standard deviation indicates that the
-    values are similar
-    so as an example imagine that five
-    professors are all grading the same
-    essays on a one to five scale
-    and so for essay one the professors gave
-    a four a four a four a five and a three
-    for essay 2 they gave a two a three a
-    five a four and a one so very different
-    scores the standard deviation
-    calculation shows that for essay 1 the
-    standard deviation 0.63 not too bad
-    but for sa2 it's 1.41 it's higher than
-    one it lets us know that the jumps
-    between these
-    away from the mean are really far apart
-    so in this case
-    it's a red flag that something's
-    inconsistent in the grading between
-    these professors
-    so range and standard deviation are
-    super important if you're reporting mean
-    you gotta report standard deviation if
-    you just tell me the mean scores on the
-    test in your class that doesn't mean
-    much to me I gotta also know standard
-    deviation to really understand what's
-    going on
-    range and standard deviation are also
-    really helpful for noticing errors in a
-    data set so for example let's say you do
-    a study for ages and everyone that you
-    talk to was age 1865. but you go into
-    the statistics program and you see the
-    range is 9 to 99. someone must have
-    entered their age wrong or if the
-    standard deviation is huge something's
-    wrong in your data so this is useful
-    this way too
-    looking at the class height in
-    centimeters again we already talked
-    about the mean median and mode the range
-    of heights was 65 to 200.66 so big range
-    and the standard deviation was 15.97 and
-    really that's those outliers that are
-    changing things up I think that it might
-    have been a little different if
-    we didn't have those outliers but
-    you can see that
-    um the standard deviation indicates that
-    there are some big differences in this
-    data set
-    here's another example that might make
-    it a little clearer this was on a scale
-    of one to seven students reporting how
-    much they support UW husky Athletics
-    um and so these are frequencies of what
-    people reported in this case the mean
-    was
-    um 4.56 the median was 5 the mode is 5
-    the range is one to seven and the
-    standard deviation was 1.69
-    so you can see that in this case that
-    you know
-    the most people said five
-    and the mean is just a little under five
-    it's 4.56 it's like right here right but
-    um
-    the spread is still pretty good with
-    1.69
-    we'll look at it again here
-    um pulled out like this and here's the
-    mean and here's the median you can see
-    and the mode is five so it's on top
-    there too and you can see here this is a
-    negative skew
-    and the mean is right out in front
-    so you can see the majority of the class
-    does support husky Athletics pretty
-    strongly
-    um so this is just another way to
-    visualize this
-    we're gonna move on to talk about
-    inferential explanatory statistics so if
-    you want to take a little break right
-    now this would be a good time to take a
-    break hit the pause button if you had a
-    hard time with some of this stuff you
-    might want to rewind back and start from
-    here
-    um and just watch these again
-    but let's move on to talking about some
-    more analysis
-    so recall we talked about bivariate
-    multivariate and univariate Analysis
-    univariate was when we're just looking
-    at single indicators bivariate is
-    relationship between two variables
-    multivariate is relationship between
-    three or more
-    in general when we're doing
-    explanatory analyzes bivariated
-    multivariate analyzes we're trying to do
-    one of two things we're either trying to
-    test the strength of relationships this
-    is also called associations or we're
-    trying to test differences between means
-    so we're going to talk about how those
-    are different
-    we've talked about hypotheses in this
-    class quite a bit before but I'm going
-    to explain
-    um about
-    statistical significance in hypotheses
-    a research hypothesis is a statement
-    about the relationships among the
-    variables that the researcher intends to
-    study
-    and then there's this thing called the
-    null hypothesis and this can be
-    incredibly confusing
-    hear me out try to follow along there's
-    also videos on this the null hypothesis
-    is the opposite of the research
-    hypothesis it is a statement
-    that is a prediction about what the
-    researcher expects not to find the null
-    hypothesis is that there's no
-    relationship between the variables
-    or that there's complete randomness
-    okay
-    researchers use tests of student
-    statistical significance to test their
-    hypotheses and these tests calculate the
-    likelihood that the observed
-    relationships between variables were
-    random or just by chance that you know
-    did this just happen just because
-    so the null hypothesis
-    is saying that there's no relationship
-    okay
-    the research hypothesis says there is a
-    relationship
-    so we have these types of error that are
-    part of this
-    type 1 and type 2 errors are mistakes
-    that are made when interpreting
-    statistical results
-    type 1 errors are when someone falsely
-    concludes that there is a relationship
-    when there actually is not one
-    type two errors are when you don't
-    detect
-    a real effect or relationship but there
-    was one there
-    so a type 1 error is also known as a
-    false positive
-    this is what a case when the researcher
-    rejects the null hypothesis but the null
-    hypothesis was actually true remember
-    the null hypothesis was that there's no
-    relationship in this case with a type 1
-    error the researcher concluded that
-    there was a relationship when there
-    really wasn't
-    so imagine a study where someone is
-    studying trying to understand if
-    listening to classical music helps
-    academic performance
-    the null hypothesis in this study is
-    that there is no significant difference
-    in academic performance between students
-    who listen to classical music and
-    students who don't listen to classical
-    music
-    if the researcher finds a statistically
-    significant difference between those
-    who'd listen to music and didn't but the
-    effect is actually just due to chance
-    they have made a type 1 error
-    in the social sciences we use a five
-    percent level for our threshold about if
+    ♪ I can't win
+    ♪ 'Cause I don't have a thing to lose ♪
     
-    something is just due to chance
-    okay
-    so the researcher will go through a test
+    ♪ I stopped by my daughter's house ♪
+    ♪ You know I just want to use the phone ♪
     
-    of statistical significance and ask
-    themselves
-    is there less than a five percent chance
-    that this relationship is there
-    a type 2 error is when the researcher
-    fails to reject a null hypothesis that
-    is actually false this is a false
-    negative
-    the researcher concludes that there's no
-    significant relationship or effect
-    between the variables when there
-    actually was
-    so in this case let's say the researcher
-    failed to find a relationship between
-    academic performance and classical music
-    but there is a real effect they may have
-    made a type 2 error by concluding that
-    listening to classical music didn't
-    improve academic performance in order to
-    avoid type 2 error you have to have a
-    good sample size that you can actually
-    see the relationship
-    so why am I telling you all this this
-    might seem kind of obscure
-    researchers use these tests of
-    statistical significance to test their
-    hypotheses these tests calculate the
-    likelihood that the observed
-    relationships between variables were
-    just random
-    or if there is a real relationship
-    between variables
-    p-values are measures of statistical
-    significance we calculate them with
-    statistic software in your textbook they
-    talk about SPSS but you can also use
-    Excel Google Sheets you can also
-    calculate it by hand
-    p-values represent the probability of
-    obtaining results
-    that are as Extreme as what was observed
-    or if there's no real relationship
-    between the variables as I mentioned a
-    moment ago there's a long-standing
-    tradition in the social sciences of
-    using a
-    0.05 significance level which means that
-    there's less than five percent chance
-    that the results were due to random
-    chance
-    we usually report results as less than
-    .05 less than .01 or less than .001
+    ♪ I stopped by my daughter's house ♪
+    ♪ You know I just want to use the phone ♪
+    (James Baldwin narrating)
     
-    the lower the p-value the more certain
-    do we have that it wasn't just due to
-    chance
-    so with p
-    being less than .05 it means that the
-    likelihood of finding the relationship
-    between variables that were observed in
-    the study
-    where there is no such relationship in
-    the population is less than five and one
-    hundred
-    so if a researcher obtains a p-value
-    within this range less than .05
-    they can reject the null hypothesis so
-    the goal is to reject that null
-    hypothesis that again that was the
-    hypothesis that said that there's no
-    relationship between variables the
-    smaller the p-value the more plausible
-    the research hypothesis is compared to
-    the null hypothesis
-    if this was a lot for you hit pause
-    listen to it again there's also a video
-    on this that explains it
-    in a different way
-    um it is hard I know I know
+    (siren blaring)
+    The summer has scarcely begun,
+    and I feel already that it's almost over.
+    And I will be 55.
+    Yes, 55, in a month.
     
-    so how do we get to statistical
-    significance you need to have a good
-    sample size you have to have a strength
-    of relationship between variables and
-    with larger sample sizes or stronger
-    strength of relationships you have a
-    higher likelihood of finding statistical
-    significant relationships between
-    variables
-    I do want to warn you though that
-    statistical significance does not
-    necessarily imply practical or clinical
-    significance practical significance is
-    means like that it doesn't actually
-    really matter so imagine that a study
-    shows a statistically significant
-    reduction in depression after a
-    treatment but the effect is really tiny
-    and the treatment costs millions of
-    dollars and it's really hard for people
-    to go through this treatment so even
-    though there was a statistical
-    significance this study might not have
-    practical significance because it might
-    actually not be worth doing
-    clinical significance let's give an
-    example of there's a new medication that
-    lowers blood pressure by a few points
-    but the medication has a bunch of side
-    effects even though the study might have
-    shown that it's statistically
-    significant it's not actually clinically
-    significant because doctors aren't going
-    to use it because of all these side
-    effects
-    I also want to mention that inferential
-    statistics technically should not be
-    used in a non-probability sample because
-    inferential statistics really require
-    you to have a random sample that goes
-    along with the normal distribution
-    non-probability samples are less likely
-    to
-    um be random obviously and they're less
-    likely to have a normal distribution all
-    of these analyzes assume a normal
-    distribution so
-    in reality we still do this but you have
-    to be much more cautious in the
-    assertions you're making when you are
+    I am about to undertake the journey.
+    And this is a journey, to tell you the truth,
+    which I always knew that I would have to make,
+    but had hoped, perhaps,
+    certainly had hoped,
+    not to have to make so soon.
+    I am saying that a journey is called that
+    because you cannot know what you will discover
+    on the journey,
+    what you will do with what you find,
+    or what you find will do to you.
+    Not only have a right to be free,
+    - we have a duty to be free. - Crowd: Yeah.
+    When you sit down on the bus and you sit down in the front,
+    or sit down by a white person,
+    you are sitting there because you have a duty to sit down,
+    not merely because you have a right.
+    Baldwin: The time of these lives and deaths,
+    from a public point of view, is 1955,
+    when we first heard of Martin,
+    to 1968, when he was murdered.
     
-    trying to use Implement inferential
-    statistics on a non-probability sample
+    Medgar was murdered in the summer of 1963.
+    Malcolm was murdered in 1965.
+    ♪ Here, take my hand, Precious Lord ♪
+    ♪ Lead me on ♪
+    ♪ Let me stand ♪
+    ♪ I am tired ♪
+    ♪ I'm weak ♪
+    ♪ I am worn ♪
+    ♪ Through the storm ♪
+    Baldwin: The three men,
+    Medgar, Malcolm, and Martin, were very different men.
     
-    so a good hypothesis has to be
-    falsifiable that means it's testable
-    it's falsifiable if it can be
-    potentially proven false through
-    observation or experimentation so for
-    example all swans are white is a
-    falsifiable statement because it can be
-    tested through observation there is a
-    God who created the universe is not a
-    falsifiable statement because you can't
-    test or observe that
-    good hypotheses need to also be
-    significantly specific concrete and
-    clear in order to be tested
-    research questions are okay but in
-    general we prefer hypotheses research
-    questions are only used when there isn't
-    enough
-    prior knowledge in your literature
-    review or if prior research findings
-    contradict each other but if you're
-    going to do a study that's quantitative
-    you really want to try to have a
-    hypothesis
-    and on top of that you want to try to
-    have a directional hypothesis
-    non-directional hypotheses they're also
-    called two-tailed hypotheses are when
-    the researcher predicts that there will
-    be a difference between two groups or
-    relationship between two variables but
-    does not specify what direction the
-    difference or relationship goes
-    you want to try to have a directional
-    hypothesis since it's more precise so a
-    directional hypothesis would be as more
-    television viewing increases fear of
-    crime increases
-    a non-directional hypothesis would just
-    be the amount of nukes consumption will
-    be related to fear of crime or com
-    majors and poli-sci Majors will have
-    different
-    LSAT exam scores
-    but you don't predict any particular
-    direction that they go in
-    try not to do that
-    okay
-    again bivariate and multivariate
-    analyzes are used to explain
-    we look at associations and differences
-    important to know is that the type of
-    statistical analysis that you can do
-    depends on two things one the hypothesis
-    you have is your hypothesis implying
-    Association or is it about comparing
-    differences between groups or
-    interventions and the level of
-    measurement of your variables only some
-    tests can be done with some levels of
-    measurement so we're going to go through
-    them and it's going to be really
-    important that you learn
-    what levels of measurement go with which
-    test
-    so first we're going to talk about
-    associations and then we're going to
-    talk about differences
-    the primary Association that we
-    understand is called correlation people
-    say this casually all the time in
-    everyday speech but it does actually
-    have a statistical meaning
-    the change in one value of one variable
-    is associated with the change in the
-    other variable
-    and a correlation requires two
-    continuous variables
-    in a correlation you compute something
-    called a Pearson's R this Pearson's R
-    tells you the direction positive or
-    negative and the magnitude of
-    relationship
-    it is very confusing for people
-    but
-    positive relationship means that both
-    variables are going in the same
-    direction negative relationship means
-    that the two variables are going in two
-    different directions
-    okay
-    it's I don't know how to get it stuck in
-    your head but positive just means same
-    direction negative means different
-    direction
-    Pearson's R also tells you the magnitude
-    meaning the strength of the relationship
-    so direction of relationship as I said a
-    positive r as X increases y increases
-    so here's an example
-    with more hours spent revising which is
-    British English for studying your exam
-    score goes up
-    hours spent studying exam score
-    goes up positive negative r as X
-    increases y decreases
-    X flu shots given
-    positive like it goes up
-    people with the flu goes down so this is
-    a negative correlation because fluid
-    shots are the things that are increasing
-    and people with the flu is the thing
-    that is decreasing
-    okay
-    magnitude of relationship this Pearson's
-    R ranges from zero to one
-    specifically negative one to positive
-    one with zero in the middle the further
-    from zero the stronger the relationship
-    and the general rules obviously one's a
-    perfect relationship
-    0.7 to 0.9 correlation is a strong
-    relationship and that's what we want 0.4
-    to 0.6 is okay it's a moderate 0.1 to
-    0.3 is weak it's nothing to get that
-    excited about
-    so let's look at an example of
-    correlation
-    this is from this website it's kind of a
-    joke
-    um that about things that are correlated
-    it's really important to know that
-    correlation can tell you that these two
-    variables are related but correlation
-    does not tell you that one causes the
-    other
-    you don't know is it possible that a
-    third variable is the actual cause the
-    relationship is spurious
-    it also doesn't tell you the independent
-    variable versus the dependent variable
-    directionality in general we know that
-    independent variables should come first
-    in time before dependent variables but
-    sometimes in life things happen at the
-    same time
-    so for example the divorce rate in Maine
-    correlates with consumption of margarine
-    which is like this fake butter and it's
-    correlated pretty high the r is 0.99
-    it's almost a perfect correlation and
-    you can see this in the chart right
-    um
-    so obviously these two things have
-    nothing to do with each other right and
-    there's no independent or dependent
-    variable but this is just to go to show
-    you that really anything can be
-    correlated
-    here's number of people that drowned by
-    falling into a pool correlates with
-    films Nicholas Cage appeared in I mean
-    this is ridiculous but it's correlated
-    0.66 repeating
-    so this website is pretty funny you can
-    go to it if you search for Spurs
-    correlations or I guess this guy's name
-    is tigervegan.com Tyler vegan you can
-    check it out but the really really
-    important take home here is that
-    correlation does not equal causation
-    sing it from the rooftops tell people
-    this is not case correlation just means
-    that these variables are related that's
-    it
-    another part of correlation is r squared
-    r squared is the coefficient of
-    determination this is a correlation
-    where you actually do have an
-    independent and dependent variable
-    unlike the examples that we just talked
-    about
-    r squared shows how much variation is in
-    variable a the dependent variable that's
-    explained by the variation in variable B
-    the independent variable
-    this is often used to indicate the
-    strength of relationship again it
-    doesn't indicate causality just the
-    strength of the relationship but there
-    is an independent and dependent variable
-    so
-    we use it to explain variation so in
-    this example if age and earnings have a
-    correlation of r as 0.60 then r squared
-    is 0.36 which means that we can say that
-    36 percent of the variation in the
-    earnings variable is explained by
-    variation in the variable age
-    so that means that the rest of it is not
-    explained by age and that means that
-    there are other variables that
-    contribute
-    or in another example let's say you're
-    doing a study of work-life balance and
-    job satisfaction the r squared indicates
-    the extent to which work-life balance
-    can be explained by differences in job
-    satisfaction a low r squared indicates
-    that other factors might be influencing
-    job satisfaction
+    Consider that Martin was only 26 in 1955.
+    He took on his shoulders the weight of the crimes,
+    and the lies, and the hope of a nation.
     
-    control variables we've talked about
-    this a little bit before when we talked
-    about experiments
-    control variables determines if a
-    relationship between A and B holds up if
-    a third variable is introduced
-    usually this is a variable that is held
-    constant to isolate the effect of the
-    independent variable on the dependent
-    variable so for example imagine a study
-    that looks at income as a dependent
-    variable and how much education
-    someone's had is the independent
-    variable we would assume with the more
-    education someone's had they probably
-    make more money but age is an important
-    control variable in the study because
-    people that are older are also going to
-    make more money right and it affects the
-    impact that education has on income
-    so age also influences income you have
-    to hold it constant because otherwise it
-    could confound the relationship between
-    educational attainment and income
-    the other form of Association that we
-    talk about quite a bit is regression
-    this is when there is more than one
-    independent variable it is a multiple
-    regression test
-    this is how we explore multiple
-    variables predicting a single dependent
-    variable and they tell you how much each
-    predictor variable in each independent
-    variable entered into the model
-    contributes to the dependent variable
-    both one by one and also combined
-    the simplest form of regression uses all
-    continuous measures remember correlation
-    that we just talked about was all
-    continuous measures
-    if you have a categorical variable that
-    you want to put into regression you have
-    to do this thing which is called
-    creating a dummy variable
-    where that categorical variable one
-    value of it
-    let's say it's like blue eyes versus
-    brown eyes or something is given a one
-    and the other values are given a zero
-    um so you basically make it a continuous
-    variable that is one and zero
-    in a regression beta coefficients you
-    can see this little character beta for
-    each variable are the measures of the
-    strength of the effect of entering each
-    variable into the equation
-    the higher the beta coefficient the
-    stronger the predictor is and each beta
-    has its own Associated significance
-    level so here is a regression study I
-    did many years ago that looked at
-    internet use I looked at the age their
-    household education or their household
-    economic situation and their education
-    this beta score age was
-    um negatively related to using the
-    internet and it was significant
-    their economic situation was slightly
-    significant or was still significant but
-    a little bit less and education was
-    pretty highly related so each of these
-    was a contributor and then there was an
-    overall measure as well that actually is
-    that R square that we talked about
-    a ton of independent
-    Bluffton will enter these locks and
-    as regression each block entered has its
-    own r squared and the subsequent blocks
-    build on it and what's really
-    interesting is is that stepwise
-    regression is actually really rigorous
-    because that last independent variable
-    still has to explain some of the
-    variants even though all the previous
-    variables already aided up in the model
-    so there's videos textbook you can read
-    more about this but now we're going to
-    move on to talking about differences
-    differences are testing the means
-    between the two or three or four or
-    whatever different groups or
-    manipulations especially if you're doing
-    an experiment
-    the goal is to compute mean scores of
-    the dependent variable for each category
-    of the independent variable and compare
-    them if you're doing an experiment
-    you're definitely going to be doing a
-    test of differences where you're
-    comparing means
-    but you could also take other data
-    that's not experimental and do test of
-    differences so for example do children
-    divorce families do worse in schools
-    than Children and non-diverse Families
-    you get all the kids gpas
-    you sort them by divorce family or not
-    and you compare the average GPA this
-    isn't an experiment
-    you're using existing data I guess you
-    have access to and doing a test between
-    differences but again if you do an
-    experiment you're definitely doing a
-    test of differences
-    so there's a couple different
-    differences test
-    the first one is called a Chi Squared
-    even though it's spelled c-h-i you
-    pronounce Chi like the word sky
-    and that X there is the Greek letter Chi
-    chi-square test allows you to look if
-    there are actual data differences from a
-    random distribution
-    a chi-squared test requires you to use
-    two categorical usually nominal
-    variables
-    you're going to see if there's
-    significant associations between
-    those variables we want to know if
-    there's a difference in the distribution
-    of responses or frequencies among these
-    two groups
-    in a chi-square you calculate the
-    expected frequencies for each category
-    assuming that there should be no
-    difference significantly between the
-    groups
-    then you look at the observed
-    frequencies and you compare the expected
-    versus the
-    actual
-    so
-    we tend to use a cross tab with this and
-    let me show you an example
-    so in our class data set I asked you if
-    you played soccer on a team as a kid
-    and also about people's eye color so
-    in this case this is a cross tab you can
-    see these are the class eye colors this
-    is no I didn't play soccer on a team
-    this is yes I played soccer on a team
-    and this is how many of you in actuality
-    The observed frequencies
-    for each eye color category and each
-    playing soccer or not category how many
-    ended up in each cell
-    but then I calculated this expected
-    frequencies and how we calculate
-    expected frequencies you can see for
-    this example
-    this is for didn't play soccer and brown
-    I took the total number of people with
-    brown eyes I multiplied it by the total
-    number of people that did not play
-    soccer and then I divided it by the
-    total number of both and this gives me
-    the expected frequencies
-    so in this case it was expected that 20
-    ish people would have brown eyes and say
-    no
-    Etc so if you look at the expected
-    versus the The observed you can actually
-    see that there were some unusual
-    differences so for example up here hazel
-    eyes
-    in reality one person with these lies
-    didn't play soccer
-    five people with hazel eyes did but the
-    expected were
-    2.6 and 3.4 so you know just as an
-    example
-    and so what was pretty interesting this
-    calculation is actually looking at the
-    differences between the observed and
-    expected
-    with you know squared
-    and you can see like I said this Hazel
-    was
-    a little different blue eyes was a
-    little different than expected
-    in this case
-    the p-value was 0.29 and remember with
-    our p-values we want them to be less
-    than 0.05
-    because that would mean that there was a
-    greater than chance
-    likelihood that the relationship
-    actually was significant in this case it
-    wasn't but also we wouldn't expect there
-    to be right like there's no theoretical
-    reason why playing soccer and eye color
-    would have anything to do with each
-    other I just had to use it for this
-    example because it was the easiest
-    categorical variables to use
+    I want these three lives to bang against
+    and reveal each other, as in truth, they did
+    and use their dreadful journey
+    as a means of instructing the people
+    whom they loved so much,
+    who betrayed them,
+    and for whom they gave their lives.
+    (train rattles)
     
-    the other form of differences in the
-    next way to think about this are is
-    called t-test
-    t-test allows you to compare two
-    categories sample means against a
-    continuous variable okay so this is a
-    categorical variable that has two levels
-    against a continuous variable
-    there are independent and dependent
-    t-tests
-    an independent t-test
-    is calculated
-    the based on the size of the two groups
-    and the amount of variation between the
-    group two groups so these are groups
-    that are not related to each other at
-    all
-    a dependent t-test the groups are
-    closely related to each other like it
-    would be like two parts of a partnered
-    couple or a kid and their parent or
-    something that you would expect the
-    results to be really similar to each
-    other
-    um this is also the test that we use
-    when we're testing the same people over
-    time like if we were testing
-    um their measures on some sort of IQ
-    test at one point and then at some point
-    in the future of okay but don't worry
-    too much about this independent
-    dependent remember that t-tests are two
-    levels of a categorical variable
-    looking against a continuous variable
+    Leander Perez: The moment a negro child
+    walks into the school,
+    every decent, self-respecting, loving parent
+    should take his white child out of that broken school.
+    (indistinct chatter)
     
-    so for either independent or dependent
-    test that grouping variable is the one
-    that divides the sample into two groups
-    it's usually going to be a nominal so
-    for example imagine you had an
-    experiment
-    and you had a control condition or a
-    treatment condition
-    this is a variable that divides the
-    sample into two groups people that were
-    in the control are people that were in
-    the treatment it's a nominal level
-    measure
-    because t-tests determine if means are
-    different in the first group versus the
-    second group the dependent variable has
-    to be continuous interval or ratio level
-    so that the means make sense
+    Go back to your own school.
     
-    so in this case I looked again at this
-    soccer having played soccer yes or no so
-    41 of you said that you played soccer as
-    a kid 36 of you said you didn't
-    and then I took this husky athletic
-    support now this is not a true interval
-    measure but we're treating it as such as
-    you've read in the book that in
-    communication we tend to treat it as
-    such
-    so
-    I did a t-test and I said okay is there
-    a difference between people that played
-    soccer and didn't play soccer and what
-    they said their support of UW husky
-    Athletics is and in fact there was a
-    significant relationship this p-value
-    here is 0.00
-    super interesting
-    so if we look at this we can see
-    that so green is people that played
-    soccer and blue is people that didn't
-    play soccer and you can actually see
-    that people that played soccer were much
-    more likely to be on the upper levels of
-    support of husky Athletics and the
-    people that didn't play soccer were much
-    more likely to be on the lower level so
-    this was interesting
-    so soccer is a nominal variable remember
-    this support is a fake interval and yeah
-    we calculated this as a t-test so that
-    was pretty interesting there is a
-    significant relationship between having
-    played soccer and
-    husky athletic support in that there is
-    a significant difference between those
-    who played and didn't play
-    the last test we're going to talk about
-    is Anova Anova stands for analysis of
-    variance Anova is the t-test older
-    sibling Anova test differences between
-    three or more categories sample means on
-    a continuous variable so t-test has to
-    be two levels in that case played soccer
-    didn't
-    and then on any continuous variable
-    Anova three or more we're going to focus
-    on one way and over there's a lot of
-    different kinds of anovas but we'll use
-    it one Way Anova for this example
-    so in this example I looked at Ada eye
-    color measure against this
-    pseudo-interval measure of support for
-    um
-    husky Athletics so
-    you can see here
-    that when we went across eye colors and
-    support that
-    um there were some notable differences
-    and you can look here and you can see
-    like
-    you know the the differences are a
-    little bit different now what's really
-    important is is that we had a ton more
-    people in this class overall with brown
-    eyes than any other color eyes so it's
-    not really a fair uh comparison however
-    if the p-value was significant
-    um which is shocking
-    um I think that the low numbers of some
-    of these eye colors impacted the result
-    but it did end up having a significant
-    result
-    um so there's no theoretical explanation
-    for it but it did exist in here but so
-    you can see that again that's soccer or
-    I'm sorry the eye color is a nominal
-    variable that had more than three
-    categories we had in this case five and
-    the continuous measure is a
-    pseudo-continuous measure of support for
-    Husky Athletics
-    so again a t-test is two like soccer yes
-    no Anova is three or more and this is
-    different kinds of eye color
+    God forgives murder and he forgives adultery.
+    But He is very angry
+    and He actually curses all who do integrate.
+    - (crowd shouting) - (whistles blowing)
     
-
+    Baldwin: That's when I saw the photograph.
+    On every newspaper kiosk
+    on that wide, tree-shaped boulevard in Paris,
+    were photographs of 15-year-old Dorothy Counts
+    being reviled and spat upon by the mob
+    as she was making her way to school
+    in Charlotte, North Carolina.
+    There was unutterable pride,
+    tension and anguish in that girl's face
+    as she approached the halls of learning,
+    with history jeering at her back.
+    It made me furious,
+    it filled me with both hatred and pity.
+    And it made me ashamed.
+    Some one of us should have been there with her!
+    
+    But it was on that bright afternoon
+    that I knew I was leaving France.
+    I could simply no longer sit around Paris,
+    discussing the Algerian and the Black American problem.
+    Everybody else was paying their dues,
+    and it was time I went home and paid mine.
+    ♪ If you was white, You'd be alright ♪
+    ♪ If you was brown, Stick around ♪
+    ♪ But as you's black ♪
+    ♪ Oh, brother ♪
+    ♪ Get back, get back, get back ♪
+    
+    ♪ I went to an employment office ♪
+    ♪ I got a number and I got in line ♪
+    ♪ They called everybody's number ♪
+    ♪ But they never did call mine ♪
+    ♪ I said, if you was white, You'd be alright ♪
+    ♪ If you was brown, Stick around ♪
+    ♪ But as you's black ♪
+    ♪ Oh, brother... ♪
+    (sirens blaring)
+    
+    (indistinct speech)
+    
+    Baldwin: I had at last come home.
+    If there was, in this, some illusion,
+    there was also much truth.
+    In the years in Paris,
+    I had never been homesick for anything American.
+    Neither waffles, ice cream,
+    hot dogs, baseball, majorettes, movies,
+    
+    nor the Empire State Building, nor Coney Island,
+    nor the Statue of Liberty, nor the Daily News,
+    nor Times Square.
+    All of these things had passed out of me.
+    They might never had existed, and it made absolutely
+    no difference to me if I never saw them again.
+    
+    But I missed my brothers and sisters, and my mother.
+    They made a difference.
+    I wanted to be able to see them, and to see their children.
+    I hoped that they wouldn't forget me.
+    I missed Harlem Sunday mornings and fried chicken,
+    and biscuits, I missed the music,
+    I missed the style...
+    that style possessed by no other people in the world.
+    I missed the way the dark face closes,
+    the way dark eyes watch, and the way,
+    when a dark face opens, a light seems to go everywhere.
+    I missed, in short, my connections,
+    missed the life which had produced me and nourished me
+    and paid for me.
+    Now, though I was a stranger, I was home.
+    
+    (music playing)
+    
+    I am fascinated by the movement on and off the screen.
+    
+    I am about seven.
+    I'm with my mother, or my aunt.
+    The movie is Dance, Fools, Dance.
+    
+    I was aware that Joan Crawford was a white lady.
+    Yet, I remember being sent to the store sometime later,
+    and a colored woman who, to me,
+    looked exactly like Joan Crawford,
+    was buying something.
+    She was incredibly beautiful.
+    She looked down at me with so beautiful a smile
+    that I was not even embarrassed,
+    which was rare for me.
+    (applause)
+    
+    By this time,
+    I had been taken in hand by a young white schoolteacher
+    named Bill Miller, a beautiful woman,
+    very important to me.
+    She gave me books to read and talked to me about the books,
+    and about the world:
+    about Ethiopia, and Italy,
+    and the German Third Reich,
+    and took me to see plays and films,
+    to which no one else would have dreamed
+    of taking a ten-year-old boy.
+    (indistinct singing)
+    - (shouting) - (drums playing)
+    It is certainly because of Bill Miller,
+    who arrived in my terrifying life so soon,
+    that I never really managed to hate white people.
+    Though, God knows,
+    I've often wished to murder more than one or two.
+    (shouting and jeering)
+    Therefore, I begin to suspect
+    that white people did not act as they did
+    because they were white, but for some other reason.
+    (whimpering)
+    I was a child of course, and therefore unsophisticated.
+    I took Bill Miller as she was, or as she appeared to be to me.
+    She too, anyway, was treated like a nigger,
+    especially by the cops,
+    and she had no love for landlords.
+    ♪ Richard! Can't get him up! ♪
+    ♪ Richard! Can't get him up! ♪
+    ♪ Richard! Can't get him up! ♪
+    ♪ Lazy Richard! Can't get him up! ♪
+    ♪ Richard! ♪
+    Baldwin: In these days, no one resembling my father
+    has yet made an appearance on the American cinema scene.
+    ♪ Can't get him up! ♪
+    ♪ We'll try to get him on the phone ♪
+    ♪ I was laying down dreamin'... ♪
+    Baldwin: No, it's not entirely true.
+    There were, for example, Stepin Fetchit and Willie Best
+    and Mantan Moreland, all of whom, rightly or wrongly,
+    I loathed.
+    It seemed to me that they lied about the world I knew,
+    and debased it,
+    and certainly I did not know anybody like them,
+    as far as I could tell.
+    For it also possible that their comic, bug-eyed terror
+    contained the truth concerning a terror
+    by which I hoped never to be engulfed.
+    Yet, I had no reservations at all concerning the terror
+    of the Black janitor in They won't forget.
+    Give me police!
+    Give me police!
+    Give me... Give me police!
+    Baldwin: I think that it was a black actor
+    named Clinton Rosemond who played this part,
+    and he looked a little like my father.
+    I didn't do it. I didn't do it!
+    I didn't do it! I didn't do it!
+    Baldwin: He is terrified because a young white girl
+    in this small Southern town has been raped and murdered,
+    and her body has been found upon the premises
+    of which he is the janitor.
+    Good morning, Tump.
+    Baldwin: The role of the janitor is small,
+    yet the man's face bangs in my memory until today.
+    - I have done nothing. - Nobody says you have, Tom.
+    But they might.
+    Baldwin: The film's icy brutality both scared me...
+    What for?
+    ...and strengthened me.
+    (whipping)
+    
+    - (inaudible) - (whipping)
+    
+    Baldwin: Because Uncle Tom refuses to take vengeance
+    in his own hands, he was not a hero for me.
+    - (gunshot) - (screaming)
+    Heroes, as far as I could see, where white,
+    and not merely because of the movies,
+    but because of the land in which I lived,
+    of which movies were simply a reflection.
+    I despised and feared those heroes
+    because they did take vengeance into their own hands.
+    They thought vengeance was theirs to take.
+    And, yes, I understood that:
+    my countrymen were my enemy.
+    (screaming)
+    
+    I suspect that all these stories are designed to reassure us
+    that no crime was committed.
+    We've made a legend out of a massacre.
+    
+    Baldwin: Leaving aside all the physical facts
+    which one can quote.
+    Leaving aside rape or murder.
+    Leaving aside the bloody catalog of oppression,
+    which we are, in one way, too familiar with already,
+    what this does to the subjugated
+    is to destroy his sense of reality.
+    This means, in the case of an American negro,
+    born in that glittering republic,
+    and in the moment you are born,
+    since you don't know any better, every stick and stone
+    and every face is white,
+    and since you have not yet seen a mirror,
+    you suppose that you are too.
+    It comes as a great shock around the age of five,
+    or six, or seven,
+    to discover that Gary Cooper killing off the Indians,
+    when you were rooting for Gary Cooper,
+    - that the Indians were you. - (crowd murmur)
+    It comes as a great shock to discover the country,
+    which is your birthplace,
+    and to which you owe your life and your identity,
+    has not, in its whole system of reality,
+    evolved any place for you.
+    
+    Baldwin:
+    
+    I know how to do it, technically.
+    It is a matter of research and journeys.
+    And with you or without you, I will do it anyway.
+    
+    I begin in September, when I go on the road.
+    "The road" means my return to the South.
+    It means briefly, for example, seeing Myrlie Evers,
+    and the children.
+    Those children who are children no longer.
+    It means going back to Atlanta, to Selma, to Birmingham.
+    
+    It means seeing Coretta Scott King,
+    and Martin's children.
+    I know that Martin's daughter,
+    whose name I don't remember, and Malcolm's oldest daughter,
+    whose name is Attalah are both in the theatre,
+    and apparently are friends.
+    It means seeing Betty Shabazz, Malcolm's widow,
+    and the five younger children.
+    It means exposing myself as one of the witnesses
+    to the lives and deaths of their famous fathers.
+    And it means much, much more than that.
+    "A clod of witnesses," as old St. Paul once put it.
+    
+    Baldwin:
+    I saw Malcolm before I met him.
+    I was giving a lecture somewhere in New York.
+    Malcolm was sitting in the first row of the hall,
+    bending forward at such an angle that his long arms
+    nearly caressed the ankles of his long legs,
+    staring up at me.
+    I very nearly panicked.
+    I knew Malcolm only by legend, and this legend,
+    since I was a Harlem street boy,
+    I was sufficiently astute to distrust.
+    Malcolm might be the torch that white people claim he was,
+    though, in general,
+    white America's evaluations of these matters
+    would be laughable and even pathetic
+    did not these evaluations have such wicked results.
+    On the other hand,
+    Malcolm had no reason to trust me either.
+    And so I stumbled through my lecture,
+    with Malcolm never taking his eyes from my face.
+    ♪ Don't know why ♪
+    ♪ There's no sun up in the sky ♪
+    ♪ Stormy weather ♪
+    ♪ Since my man and I ain't together ♪
+    
+    ♪ Keeps rainin' all the time ♪
+    
+    Baldwin: As a member of the NAACP,
+    Medgar was investigating the murder of a black man,
+    which had occurred months before,
+    had shown me letters from black people
+    asking him to do this,
+    and he had asked me to come with him.
+    ♪ Raise up! ♪
+    ♪ Get yourself together, And drive that funky soul ♪
+    Baldwin: I was terribly frightened,
+    but perhaps that fieldtrip will help us define
+    what I mean by the word "witness".
+    I was to discover that the line which separates a witness
+    from an actor is a very thin line indeed.
+    Nevertheless, the line is real.
+    I was not, for example, a Black Muslim,
+    in the same way, though for different reasons,
+    that I never became a Black Panther.
+    Because I did not believe that all white people were devils,
+    and I did not want young black people to believe that.
+    I was not a member of any Christian congregation because
+    I knew that they had not heard
+    and did not live by the commandment,
+    "Love one another as I love you."
+    And I was not a member of the NAACP
+    because in the North, where I grew up,
+    the NAACP was fatally entangled with black class distinctions,
+    
+    or illusions of the same,
+    which repelled a shoe-shine boy like me.
+    
+    I did not have to deal with the criminal state of Mississippi,
+    hour by hour and day by day,
+    to say nothing of night after night.
+    I did not have to sweat cold sweat after decisions
+    involving hundreds of thousands of lives.
+    I was not responsible for raising money,
+    or deciding how to use it.
+    I was not responsible for strategy
+    controlling prayer-meetings, marches,
+    petitions, voting registration drives.
+    I saw the Sheriffs, the Deputies,
+    the Storm Troopers, more or less in passing.
+    I was never in town to stay.
+    This was sometimes hard on my morale,
+    but I had to accept, as time wore on,
+    that part of my responsibility, as a witness,
+    was to move as largely and as freely as possible.
+    To write the story, and to get it out.
+    
+    We should all be concerned with but one goal,
+    the eradication of crime.
+    The Federal Bureau of Investigation is as close to you
+    as your nearest telephone.
+    It seeks to be your protector
+    in all matters within its jurisdiction.
+    It belongs to you.
+    
+    (rocket firing)
+    
+    Baldwin: White people are astounded by Birmingham.
+    Black people aren't.
+    White people are endlessly demanding to be reassured
+    that Birmingham is really on Mars.
+    
+    They don't want to believe, still less to act on the belief,
+    
+    that what is happening in Birmingham
+    is happening all over the country.
+    - (chanting) - (whistle blowing)
+    They don't want to realize that there is not one step,
+    morally or actually,
+    between Birmingham and Los Angeles.
+    (crowd shouting)
+    
+    (singing and clapping)
+    
+    Officer: Move on, move on!
+    (singing continues)
+    
+    We've invited three men,
+    on the forefront of The Negro Struggle,
+    to sit down and talk with us
+    in front of the television camera.
+    Each of these men, through his actions and his words,
+    but with vastly different manner and means,
+    is a spokesman for some segment of the Negro people today.
+    Black people in this country have been the victims
+    of violence at the hands of the white man for 400 years.
+    And following the ignorant negro preachers,
+    we have thought that it was Godlike to turn the other cheek
+    to the brute that was brutalizing us.
+    Malcolm X, one of the most articulate exponents
+    of the Black Muslim philosophy,
+    has said of your movement and your philosophy
+    that it plays into the hands of the white oppressors,
+    that they are happy to hear you talk about
+    
+    love for the oppressor, because this disarms the Negro
+    and fits into the stereotype of the Negro as a meek,
+    turning the other cheek sort of creature.
+    Would you care to comment on Mr. X's beliefs?
+    Well, I don't think of love as...
+    in this context, as emotional bosh,
+    but I think of love as something strong
+    and that organizes itself into powerful direct action.
+    
+    This is what I've tried to teach in the struggle in the South.
+    We are not engaged in a struggle
+    that means we sit down and do nothing.
+    There is a great deal of difference between
+    non-resistance to evil and non-violent resistance.
+    Martin Luther King is just a 20th century or modern Uncle Tom
+    or a religious Uncle Tom,
+    who is doing the same thing today
+    to keep Negroes defenseless in the face of attack
+    that Uncle Tom did on the plantation
+    to keep those Negroes defenseless
+    in the face of the attacks of the Klan in that day.
+    I think, though, that we can be sure
+    
+    that the vast majority of Negroes
+    who engage in the demonstrations,
+    and who understand the non-violent philosophy,
+    will be able to face dogs
+    and all of the other brutal methods that they use,
+    without retaliating with violence,
+    because they understand
+    that one of the first principles of non-violence
+    is a willingness to be the recipient of violence,
+    while never inflicting violence upon another.
+    
+    Baldwin: As concerns Malcolm and Martin,
+    I watched two men, coming from unimaginably
+    different backgrounds, whose positions, originally,
+    were poles apart,
+    driven closer and closer together.
+    
+    By the time each died, their positions had become,
+    virtually, the same position.
+    It can be said, indeed,
+    that Martin picked up Malcolm's burden,
+    articulated the vision which Malcolm had begun to see,
+    and for which he paid with his life,
+    and that Malcolm was one of the people
+    Martin saw on the mountain-top.
+    Medgar was too young to have seen this happen,
+    though he hoped for it, and would not have been surprised.
+    But Medgar was murdered first.
+    I was older than Medgar, Malcolm and Martin.
+    I was raised to believe that the eldest was supposed to be
+    a model for the younger, and was, of course,
+    expected to die first.
+    Not one of these three lived to be forty.
+    Two, four, six eight, we don't want to integrate!
+    Two, four, six eight, we don't want to integrate!
+    (indistinct shouting)
+    
+    We want King! We want King! We want King!
+    
+    - (gunshot) - (screaming)
+    (shouting)
+    
+    We need an organization that no one downtown loves.
+    We need one that's ready and willing to take action,
+    any kind of action, by any means necessary.
+    (applause)
+    When Malcolm talks,
+    or one of the Muslim ministers talk,
+    they articulate for all the Negro people who hear them,
+    who listen to them, they articulate their suffering.
+    
+    The suffering which has been in this country so long denied.
+    That's Malcolm's great authority over any of his audiences.
+    He corroborates their reality.
+    He tells them that they really exist, you know.
+    - (shouting) - (sirens blaring)
+    Officer: Get back. Get back!
+    - I am! - (indistinct chanting)
+    - I am! - (indistinct chanting)
+    (sirens blaring)
+    (explosions)
+    
+    There are days, this is one of them...
+    
+    ...when you wonder...
+    ...what your role is in this country
+    and what your future is in it.
+    How precisely are you going to reconcile...
+    ...yourself to your situation here,
+    and how you are going to communicate...
+    
+    ...to the vast, heedless, unthinking...
+    
+    ...cruel white majority
+    that you are here.
+    I'm terrified at the moral apathy,
+    the death of the heart,
+    which is happening in my country.
+    These people have deluded themselves for so long
+    
+    that they really don't think I'm human.
+    I base this on their conduct, not on what they say.
+    And this means that they have become, in themselves...
+    ...moral monsters.
+    - (indistinct chatter) - (cameras clicking)
+    
+    Most of the white Americans I've ever encountered,
+    really, you know, had a Negro friend or a Negro maid
+    or somebody in high school, but they never, you know,
+    or rarely, after school was over or whatever,
+    came to my kitchen, you know.
+    We were segregated from the schoolhouse door.
+    Therefore, he doesn't know, he really does not know,
+    what it was like for me to leave my house,
+    to leave the school and go back to Harlem.
+    He doesn't know how Negroes live.
+    And it comes as a great surprise to the Kennedy brothers
+    and to everybody else in the country.
+    I'm certain, again, you know,
+    that again like most white Americans I have encountered,
+    they have no...
+    I'm sure they have nothing whatever against Negroes...
+    That's really not the question.
+    The question is really a kind of apathy and ignorance,
+    which is the price we pay for segregation.
+    That's what segregation means.
+    You don't know what's happening on the other side of the wall,
+    because you don't want to know.
+    I was in some way,
+    in those years, without entirely realizing it,
+    the great Black Hope of the great White Father.
+    I was not a racist, or so I thought.
+    Malcolm was a racist, or so they thought.
+    
+    In fact, we were simply trapped in the same situation.
+    
+    Well, you tell that to my boy tonight,
+    when you put him to sleep on the living room couch.
+    And you tell it to him in the morning,
+    when his mother goes out of here
+    to take care of somebody else's kids.
+    And tell it to me, when we want some curtains or some drapes
+    and you sneak out of here and go work in somebody's kitchen.
+    All I want is to make a future for this family.
+    All I want is to be able to stand in front of my boy
+    like my father never was able to do to me.
+    Baldwin:
+    
+    Lorraine Hansberry would not be very much younger
+    than I am now, if she were alive.
+    At the time of the Bobby Kennedy meeting,
+    she was thirty-three.
+    That was one of the very last times I saw her on her feet,
+    
+    and she died at the age of thirty-four.
+    
+    I miss her so much.
+    People forget how young everybody was.
+    Bobby Kennedy, for another, quite different example,
+    was thirty-eight.
+    We wanted him to tell his brother,
+    the president, to personally escort to school,
+    on that day or the day after, a small black girl,
+    already scheduled to enter Deep South School.
+    "That way," we said,
+    "it will be clear that whoever spits on that child
+    will be spitting on the nation."
+    He didn't understand this either.
+    "It would be," he said, "a meaningless moral gesture."
+    
+    "We would like," said Lorraine, "from you, a moral commitment".
+    
+    He looked insulted,
+    seemed to feel that he'd been wasting his time.
+    Well, Lorraine sat still, watching all the while.
+    
+    She looked at Bobby Kennedy,
+    who, perhaps for the first time, looked at her.
+    
+    "But I am very worried," she said,
+    "about the state of the civilization
+    which produced that photograph of the white cop
+    standing on that Negro woman's neck in Birmingham."
+    
+    Then she smiled.
+    And I am glad that she was not smiling at me.
+    
+    "Goodbye Mr. Attorney General," she said,
+    and turned and walked out of the room.
+    
+    And then, we heard the thunder.
+    
+    Baldwin:
+    ...He stopped at his house on the way to the airport
+    so I could autograph my books for him, his wife and children.
+    
+    I remember Myrlie Evers standing outside, smiling,
+    and we waved,
+    and Medgar drove to the airport and put me on the plane.
+    
+    Months later, I was in Puerto Rico,
+    working on my play.
+    Lucien and I had spent a day or so
+    wandering around the island,
+    and now we were driving home.
+    (car radio playing)
+    
+    It was a wonderful, bright, sunny day,
+    the top to the car was down, we were laughing and talking,
+    and the radio was playing.
+    - Then the music stopped... - (music stops)
+    ...and a voice announced that Medgar Evers
+    had been shot to death in the carport of his home,
+    and his wife and children had seen the big man fall.
+    ♪ Medgar Evers was buried from the bullet he caught ♪
+    
+    ♪ They lowered him down as a king ♪
+    
+    ♪ But when the shadowy sun ♪
+    ♪ Sets on the one ♪
+    ♪ That fired the gun ♪
+    ♪ He'll see by his grave ♪
+    ♪ On the stone that remains ♪
+    ♪ Carved next to his name ♪
+    ♪ His epitaph plain: ♪
+    ♪ Only a pawn in their game ♪
+    
+    Baldwin: The blue sky seemed to descend like a blanket.
+    And I couldn't say anything, I couldn't cry.
+    I just remembered his face,
+    a bright, blunt, handsome face,
+    and his weariness, which he wore like his skin,
+    and the way he said "ro-aad" for road.
+    
+    And his telling me how the tatters of clothes
+    from a lynched body hung, flapping in the tree for days,
+    
+    and how he had to pass that tree every day.
+    
+    Medgar.
+    Gone.
+    ♪ Baby, please don't go ♪
+    ♪ Baby, please don't go ♪
+    ♪ Baby, please don't go Back to New Orleans ♪
+    ♪ You know I love you so Baby, please don't go ♪
+    (song continues)
+    
+    Baldwin: In America, I was free only in battle,
+    never free to rest,
+    and he who finds no way to rest
+    cannot long survive the battle.
+    (African singing and drumming)
+    
+    And the young, white revolutionary remains,
+    in general, far more romantic than a black one.
+    
+    White people have managed to get through entire lifetimes
+    in this euphoric state,
+    but black people have not been so lucky.
+    A black man who sees the world the way John Wayne,
+    for example, sees it...
+    would not be an eccentric patriot,
+    but a raving maniac.
+    The truth is that this country does not know what to do
+    with its black population,
+    dreaming of anything like "The Final Solution".
+    
+    Baldwin: The Negro has never been
+    as docile as white Americans wanted to believe.
+    That was a myth.
+    We were not singing and dancing down the levee.
+    We were trying to keep alive,
+    we were trying to survive a very brutal system.
+    The nigger has never been happy in his place.
+    
+    Baldwin: One of the most terrible things,
+    is that, whether I like it or not,
+    I am an American.
+    My school really was the streets of New York City.
+    My frame of reference was...
+    George Washington and John Wayne.
+    But I was a child, you know, and when a child puts his eyes
+    on the world, he has to use what he sees.
+    There's nothing else to use.
+    And you are formed by what you see,
+    the choices you have to make, and the way you discover
+    what it means to be black in New York
+    and then throughout the entire country.
+    (gun clicks)
+    I know how you watch, as you grow older,
+    and it's not a figure of speech,
+    the corpses of your brothers and your sisters
+    pile up around you.
+    And not for anything they have done.
+    They were too young to have done anything.
+    But what one does realize is that when you try to stand up
+    
+    and look the world in the face like you had a right to be here,
+    
+    you have attacked the entire power structure
+    of the western world.
+    
+    Forget "The Negro Problem".
+    Don't write any voting acts.
+    We had that. It's called The Fifteenth Amendment.
+    During the Civil Rights Bill of 1964,
+    what you have to look at is what is happening in this country,
+    and what is really happening is that brother
+    has murdered brother, knowing it was his brother.
+    White men have lynched Negroes, knowing them to be their sons.
+    White women have had Negroes burned,
+    knowing them to be their lovers.
+    It is not a racial problem.
+    It's a problem of whether or not you're willing
+    to look at your life and be responsible for it,
+    and then begin to change it.
+    That great western house I come from is one house,
+    and I am one of the children of that house.
+    Simply, I am the most despised child of that house.
+    And it is because the American people are unable
+    to face the fact that I am flesh of their flesh,
+    bone of their bone, created by them.
+    My blood, my father's blood, is in that soil.
+    
+    Good afternoon, Ma'am.
+    It's raining so hard,
+    I brought rubbers and coat to fetch my little girl home.
+    I'm afraid you've made some mistake.
+    Ain't this the 3B?
+    -Yes. -Well, this is it.
+    It can't be it.
+    I have no little colored children in my class.
+    Oh, thank you.
+    
+    There's my little girl.
+    Peola, you may you home.
+    
+    Boy: Gee, I didn't know she was colored.
+    Girl: Neither did I.
+    Peola: I hate you, I hate you, I hate you!
+    Woman: Peola! Peola!
+    
+    Baldwin: I know very well that my ancestors
+    had no desire to come to this place.
+    But neither did the ancestors of the people who became white,
+    and who require of my captivity a song.
+    
+    They require a song of me,
+    less to celebrate my captivity than to justify their own.
+    
+    Baldwin: I have always been struck, in America,
+    by an emotional poverty so bottomless,
+    and a terror of human life, of human touch,
+    
+    so deep that virtually no American appears able to achieve
+    any viable, organic connection
+    between his public stance and his private life.
+    
+    This failure of the private life has always had the most
+    devastating effect on American public conduct,
+    and on black-white relations.
+    If Americans were not so terrified
+    of their private selves,
+    they would never have become so dependent
+    on what they call "The Negro Problem".
+    They said it wasn't nice to say "nigger".
+    
+    Nigger!
+    Nigger! Nigger!
+    Poor little nigger kids, love the little nigger kids.
+    Who loved me?
+    Who loved me?
+    Baldwin: This problem, which they invented
+    in order to safeguard their purity,
+    has made of them criminals and monsters,
+    and it is destroying them.
+    (band playing)
+    And this, not from anything Blacks may or may not be doing,
+    
+    but because of the role
+    of a guilty and constricted white imagination
+    has assigned to the Blacks.
+    
+    Look man, don't give me that look.
+    You should have got what was coming to you
+    after spitting in that guy's face.
+    Why you...
+    Baldwin: It is impossible to accept the premise of the story,
+    a premise based on the profound American misunderstanding
+    of the nature of the hatred between black and white.
+    - Man: That time is now. - (grunts)
+    The root of the black man's hatred is rage,
+    and he does not so much hate white men
+    as simply wants them out of his way,
+    and more than that,
+    out of his children's way.
+    (both panting)
+    The root of the white man's hatred is terror.
+    - (grunts) - I'm gonna kill you.
+    A bottomless and nameless terror,
+    which focuses on this dread figure,
+    an entity which lives only in his mind.
+    
+    Run!
+    Come on!
+    I can't make it, I can't make it!
+    
+    Baldwin: When Sidney jumps off the train,
+    the white liberal people downtown
+    were much relieved and joyful.
+    But when black people saw him jump off the train,
+    they yelled, "Get back on the train, you fool!"
+    
+    The black man jumps off the train
+    in order to reassure white people,
+    to make them know that they are not hated,
+    that though they have made human errors,
+    they done nothing for which to be hated.
+    
+    ♪ I'm Chiquita Banana And I'm here to say ♪
+    ♪ I am the top banana... ♪
+    Baldwin: In spite of the fabulous myths
+    proliferating in this country
+    concerning the sexuality of black people,
+    black men are still used, in the popular culture,
+    as though they had no sexual equipment at all.
+    
+    Sidney Poitier, as a black artist, and a man,
+    is also up against the infantile,
+    furtive sexuality of this country.
+    Both he and Harry Belafonte, for example,
+    are sex symbols, though no one dares admit that,
+    still less to use them as any of the Hollywood he-men are used.
+    
+    Black people have been robbed of everything in this country...
+    I've got something to say to you, boy.
+    ...and they don't want to be robbed of their artist.
+    Black people particularly disliked
+    Guess Who's Coming to Dinner,
+    because they felt that Sidney was, in effect,
+    being used against them.
+    Guess Who's Coming to Dinner may prove,
+    in some bizarre way, to be a milestone,
+    because it is really quite impossible to go any further
+    in that particular direction.
+    ♪ If you ever plan to motor West... ♪
+    
+    Baldwin: The next time, the kissing will have to start.
+    
+    Well, you've got your ticket?
+    Here you are.
+    Thank you.
+    Baldwin: I am aware that men do not kiss each other
+    in American films, nor, for the most part, in America
+    
+    nor do the black detective and the white Sheriff kiss here.
+    
+    You take care, you hear?
+    
+    Yeah.
+    But the obligatory, fade-out-kiss,
+    in the classic American film, did not speak of love,
+    and still less of sex.
+    It spoke of reconciliation,
+    of all things now becoming possible.
+    - (rain pouring) - (windscreen wipers thudding)
+    
+    Baldwin: I knew a blond girl in the village
+    a long time ago, and eventually,
+    we never walked out of the house together.
+    
+    She was far safer walking the streets alone
+    than when walking with me.
+    A brutal and humiliating fact
+    which thoroughly destroyed whatever relationship
+    this girl and I might have been able to achieve.
+    
+    This happens all the time in America,
+    but Americans have yet to realize
+    what a sinister fact this is,
+    and what it says about them.
+    When we walked out in the evening, then,
+    she would leave ahead of me, alone.
+    I would give about five minutes, and then I would walk out alone,
+    
+    taking another route, and meet her on the subway platform.
+    
+    We would not acknowledge each other.
+    We would get into the subway car,
+    sitting at opposite ends of it, and walk, separately,
+    through the streets of the free and the brave,
+    to wherever we were going... a friend's house, or the movies.
+    
+    Man: All over the country,
+    families such this are enjoying new prosperity.
+    They have new interests, news standards of living,
+    a buying power they've never enjoyed before.
+    There are good prospects
+    for practically all types of goods and services.
+    All too often though, they are overlooked prospects.
+    Since 1940, in San Francisco alone,
+    the Negro market has increased by 89%.
+    Here are millions of customers for what you have to sell.
+    Customers with 15 billion dollars to spend
+    
+    Baldwin: Someone once said to me
+    that the people in general cannot bear very much reality.
+    He meant by this that they prefer fantasy
+    to a truthful recreation of their experience.
+    People have quite enough reality to bear,
+    by simply getting through their lives,
+    raising their children,
+    dealing with the eternal conundrums
+    of birth, taxes, and death.
+    Negroes are continuously making progress here in this country.
+    The progress in many areas is not as fast as it should be,
+    but they are making progress,
+    and we will continue to make progress.
+    There's no reason that they, in a near and foreseeable future,
+    that a Negro could also be president of the United States
+    I remember, for example,
+    when the ex-Attorney General, Mr. Robert Kennedy,
+    
+    said that it was conceivable
+    that in 40 years in America, we might have a Negro president.
+    
+    And that sounded like a very emancipated statement,
+    I suppose, to white people.
+    They were not in Harlem...
+    ...when this statement was first heard.
+    I did not hear, and possibly will never hear,
+    the laughter and the bitterness and the scorn
+    with which this statement was greeted.
+    From the point of view of the man in the Harlem barbershop,
+    Bobby Kennedy only got here yesterday.
+    And now he's already on his way to the Presidency.
+    We've been here for 400 years and now he tells us
+    that maybe in 40 years, if you're good,
+    we may let you become president.
+    ♪ It was a dream, Just a dream I had on my mind ♪
+    
+    ♪ It was a dream, Just s dream I had on my mind ♪
+    
+    ♪ And when I woke up, baby ♪
+    ♪ Not a thing could I find ♪
+    (cheering and applause)
+    ♪ I dreamed I was an angel And had a good time ♪
+    ♪ I dreamed I was satisfying And nothin' to worry my mind ♪
+    ♪ But it was a dream ♪
+    ♪ Just a dream I had on my mind ♪
+    
+    Baldwin: Let me put it this way,
+    that from a very literal point of view,
+    the harbors and the ports
+    and the railroads of the country,
+    
+    the economy,
+    especially in the southern states,
+    could not conceivably be what it has become
+    if they had not had,
+    and do not still have, indeed, and for so long,
+    so many generations,
+    cheap labor.
+    (Western music playing)
+    
+    Baldwin: It is a terrible thing
+    for an entire people
+    to surrender to the notion that one ninth of its population
+    is beneath them.
+    And until that moment, until the moment comes,
+    when we, the Americans,
+    we, the American people, are able to accept the fact
+    that I have to accept, for example,
+    that my ancestors are both white and black.
+    That on that continent we are trying to forge a new identity
+    for which we need each other,
+    and that I am not a ward of America.
+    I am not an object of missionary charity,
+    I am one of the people who built the country.
+    Until this moment,
+    there is scarcely any hope for the American Dream,
+    because people who are denied participation in it,
+    by their very presence...
+    ...will wreck it.
+    And if that happens, it is a very grave moment for the West.
+    - Thank you. - (applause)
+    
+    David Schoenburn: We're here in the studio today
+    with seven men who have two things in common:
+    they are entertainers and artists;
+    and they've all come to Washington.
+    They are seven out of some two hundred thousand
+    American citizens who came to the capital
+    to march for freedom and for jobs.
+    Will this tremendous outburst now lead to a course of action,
+    Mr. Belafonte?
+    The now that is being spoken about is the fact that
+    in a hundred years, finally,
+    through whatever the causes have been in history,
+    and most of them have been because of oppression,
+    the Negro people have strongly and fully
+    taken the bit in their teeth,
+    they're asking absolutely no quarter from anyone.
+    But I do say that the bulk of the interpretation
+    of whether this thing is going to end
+    successfully and joyously,
+    or is going to end disastrously,
+    lays very heavily with the white community,
+    it lays very heavily with the profiteers,
+    it lays very heavily with the vested interests.
+    It lays very heavily with a great middle stream
+    in this country,
+    of people who have refused to commit themselves,
+    or even have the slightest knowledge
+    that these things have been going on.
+    
+    Baldwin: I am speaking as a member of a certain democracy
+    in a very complex country,
+    which insists on being very narrow-minded.
+    
+    Simplicity is taken to be a great American virtue,
+    along with sincerity.
+    I am sorry.
+    I am deeply sorry.
+    And I am sorry.
+    I'm deeply sorry about that.
+    They are no excuses.
+    I am solely...
+    We have made plenty of mistakes.
+    For that, I apologize.
+    I am very sorry.
+    I'm sorry I did this to you, but you gotta get used to it.
+    It's one of those little problems in life.
+    I take full responsibility.
+    I'm here today to again apologize.
+    I'll just apologize for that to her.
+    For any mistakes I've made, I take full responsibility.
+    It's an honor to serve the city of Ferguson
+    and the people who live there.
+    
+    Baldwin: One of the results of this
+    is that immaturity is taken to be a virtue too.
+    So that someone like that, let's say John Wayne,
+    who spent most of his time on screen
+    admonishing Indians,
+    was in no necessity to grow up.
+    
+    Baldwin:
+    We were free and we decided to treat ourselves
+    to a really fancy, friendly dinner.
+    
+    The head waiter came and said there was a phone call for me,
+    and my sister Gloria rose to take it.
+    
+    She was very strange when she came back.
+    She didn't say anything,
+    and I began to be afraid to ask her anything.
+    
+    Then, nibbling at something she obviously wasn't tasting,
+    she said, "Well, I've got to tell you
+    because the press is on its way over here.
+    They have just killed Malcolm.
+    
+    There is nothing in the evidence
+    offered by the book of the American republic,
+    
+    which allows me really to argue with the cat who says to me,
+    
+    "They needed us to pick the cotton,
+    and now they don't need us anymore.
+    Now they don't need us, they're gonna kill us all off,
+    just like they did the Indians".
+    And I can't say it's a Christian nation.
+    though your brothers will never do that to you,
+    because the record is too long and too bloody.
+    That's all we have done.
+    All your buried corpses now begin to speak.
+    
+    I say violence is necessary.
+    Violence is a part of America's culture.
+    It is as American as cherry pie.
+    Black power, Brothers.
+    (cheering and applause)
+    (indistinct shouting)
+    
+    (indistinct shouting)
+    
+    Baldwin: If we were white,
+    if we were Irish, if we were Jewish,
+    if we were Poles, if we had, in fact,
+    in your mind, a frame of reference,
+    our heroes would be your heroes too.
+    Nat Turner would be a hero for you instead of a threat.
+    Malcolm X might still be alive.
+    Everyone is very proud of brave little Israel,
+    against which I have nothing,
+    I don't want to be misinterpreted,
+    I'm not an anti-Semite.
+    But, you know, when the Israelis pick up guns,
+    or the Poles, or the Irish,
+    or any white man in the world says,
+    "Give me liberty, or give me death",
+    the entire white world applauds.
+    When a black man says exactly the same thing,
+    word for word,
+    he is judged a criminal and treated like one
+    and everything possible is done
+    to make an example of this bad nigger,
+    so there won't be any more like him.
+    Man: Look out across this land we love,
+    look about you whatever you are, this unending scenic beauty,
+    and there's freedom,
+    it's an inherent American right
+    meaning many different things to every single citizen.
+    It's a leisurely afternoon of golf along a pleasant course.
+    It's an amusement park, a rollercoaster ride.
+    A day at the county fair.
+    (fire crackling)
+    A day of excitement,
+    unrestricted travel across all our 50 states,
+    unlimited enjoyment of all these jewels
+    in the continent's crown.
+    For all of us, there's all of America,
+    in all of its scenic beauty, all of its heritage of history,
+    
+    all of its limitless opportunity...
+    We've dropped too many bombs on Vietnam now.
+    (applause)
+    Let us save our national honor!
+    Stop the bombing,
+    and stop the war!
+    
+    Baldwin: What I am trying to say to this country,
+    to us,
+    is that we must know this.
+    We must realize this,
+    that no other country in the world
+    have been so fat and so sleek, and so safe,
+    and so happy, and so irresponsible,
+    and so dead.
+    No other country can afford to dream of a Plymouth and a wife
+    and a house with a fence,
+    and the children growing up safely
+    to go to college and to become executives,
+    and then to marry,
+    and have the Plymouth and the house
+    and so forth.
+    A great many people do not live this way,
+    and cannot imagine it,
+    and do not know that when we talk about "democracy",
+    this is what we mean.
+    (audience cheering)
+    
+    Baldwin: The industry is compelled,
+    given the way it is built,
+    to present to the American people
+    a self-perpetuating fantasy of American life.
+    Their concept of entertainment is difficult to distinguish
+    from the use of narcotics.
+    What worries you about them having black partners?
+    Do you think people are gonna look down on them,
+    - or judge them? - Yes, I think people look down.
+    (cheering)
+    
+    Baldwin: To watch the TV screen for any length of time
+    is to learn some really frightening things
+    about the American sense of reality.
+    We are cruelly trapped between what we would like to be
+    and what we actually are.
+    And we cannot possibly become what we would like to be until
+    we are willing to ask ourselves just why the lives we lead
+    on this continent are mainly so empty,
+    so tame, and so ugly.
+    These images are designed not to trouble,
+    but to reassure.
+    They also weaken our ability to deal with the world as it is,
+    ourselves as we are.
+    
+    I would like to add someone to our group here,
+    Professor Paul Weiss,
+    the sterling professor of philosophy at Yale.
+    - (applause) - (piano music playing)
+    
+    Were you able to listen to the show backstage?
+    I heard a good deal of it,
+    but then I was behind the whatsitmajig.
+    -Yes. -So I heard only some of it.
+    Did you hear anything that you disagreed with?
+    I disagreed with a great deal of it,
+    and of course, there's a good deal I agree with.
+    But I think he's overlooking one very important matter,
+    I think.
+    Each one of us, I think, is terribly alone.
+    He lives his own individual life.
+    He has all kind of obstacles, the way of religion or color
+    or size or shape or lack of ability,
+    and the problem is to become a man.
+    But what I was discussing was not that problem, really.
+    I was discussing the difficulties, the obstacles,
+    the very real danger of death
+    thrown up by the society when a Negro, a black man,
+    attempts to become a man.
+    All this emphasis upon black man and white,
+    does emphasize something which is here,
+    but it emphasizes, or perhaps exaggerates it,
+    and therefore makes us put people together in groups
+    which they ought not to be in.
+    I have more in common with a black scholar
+    than I have with a white man who is against scholarship.
+    And you have more in common with a white author
+    than you have with someone who is against all literature.
+    So why must we always concentrate on color,
+    or religion, or this?
+    There are other ways of connecting men.
+    Baldwin: I'll tell you this.
+    When I left this country in 1948,
+    I left this country for one reason only,
+    one reason... I didn't care where I went.
+    I might've gone to Hong Kong, I might have gone to Timbuktu.
+    I ended up in Paris, on the streets of Paris,
+    with 40 dollars in my pocket and the theory
+    that nothing worse could happen to me there
+    than had already happened to me here.
+    You talk about making it as a writer by yourself,
+    you have to be able then to turn up all the antennae
+    by which you live,
+    because once you turn your back on this society,
+    you may die.
+    - You may die. - (applause)
+    And it's very hard to sit at a typewriter,
+    and concentrate on that,
+    if you are afraid of the world around you.
+    The years I lived in Paris did one thing for me:
+    they released me from that particular social terror,
+    which was not the paranoia of my own mind,
+    but a real social danger visible in the face of every cop,
+    every boss, everybody.
+    (audience applaud)
+    I don't know what most white people in this country feel.
+    But I can only include what they feel
+    from that state of their institutions.
+    I don't know if white Christians hate Negroes or not,
+    but I know we have a Christian church which is white
+    and a Christian church which is black.
+    I know, as Malcolm X once put it,
+    the most segregated hour in American life
+    is high noon on Sunday.
+    That says a great deal for me about a Christian nation.
+    It means I can't afford to trust most white Christians
+    and I certainly cannot trust the Christian church.
+    I don't know whether the labor unions and their bosses
+    really hate me. That doesn't matter,
+    but I know I'm not in their unions.
+    I don't know if the Real Estate Lobby
+    has anything against black people,
+    but I know the Real Estate Lobby is keeping me in the ghetto.
+    I don't know if the board of education hates black people,
+    but I know the textbooks they give my children to read,
+    and the schools that we have to go to.
+    Now, this is the evidence.
+    You want me to make an act of faith,
+    risking myself, my wife, my woman,
+    my sister, my children,
+    on some idealism which you assure me
+    exists in America, which I have never seen.
+    - (applause) - Weiss: Hold on a second.
+    
+    Baldwin: All of the Western nations
+    have been caught in a lie,
+    the lie of their pretended humanism.
+    This means that their history has no moral justification,
+    
+    and that the West has no moral authority.
+    
+    (inaudible)
+    Baldwin: "Vile as I am,"
+    states one of the characters in Dostoevsky's The Idiot,
+    "I don't believe in the wagons that bring bread to humanity.
+    For the wagons that bring bread to humanity,
+    may coldly exclude a considerable part of humanity
+    from enjoying what is brought."
+    (excited cheers)
+    For a very long time, America prospered.
+    This prosperity cost millions of people their lives.
+    Now, not even the people who are the most spectacular recipients
+    of the benefits of this prosperity
+    are able to endure these benefits.
+    They can neither understand them nor do without them.
+    Above all, they cannot imagine the price paid by their victims,
+    or subjects, for this way of life,
+    and so they cannot afford to know why
+    the victims are revolting.
+    (gunshots)
+    (screams)
+    Down!
+    -On the ground! -Get on the ground, now!
+    
+    Man: Damn, man!
+    (screaming)
+    Baldwin: This is the formula
+    for a nation or a kingdom decline.
+    For no kingdom can maintain itself by force alone.
+    Force does not work the way its advocates think in fact it does.
+    - (yelling) - (gunshots)
+    It does not, for example,
+    reveal to the victim the strength of the adversary.
+    (screams)
+    (gunshots)
+    On the contrary, it reveals the weakness,
+    even the panic, of the adversary
+    
+    And this revelation invests the victim with passion.
+    
+    Baldwin: There is a day in Palm Springs
+    that I will remember forever, a bright day.
+    
+    I was based in Hollywood, working on the screen version
+    of the autobiography of Malcolm X.
+    This was a difficult assignment,
+    since I had known Malcolm, after all,
+    crossed swords with him,
+    worked with him,
+    and held him in that great esteem
+    which is not easily distinguishable,
+    if it is distinguishable,
+    from love.
+    Billy Dee Williams had come to town
+    and he was staying at the house.
+    I very much wanted Billy Dee for the role of Malcolm.
+    
+    The phone had been brought out to the pool,
+    and now it rang.
+    And I picked up.
+    The record player was still playing.
+    
+    "He's not dead yet, but it's a head wound."
+    
+    I have some very sad news for all of you,
+    and I think sad news for all our fellow citizens
+    
+    and people who love peace all of over the world.
+    And that is that Martin Luther King
+    was shot and was killed tonight.
+    (crowd scream)
+    
+    Baldwin: I hardly remember the rest of the evening at all.
+    I remember weeping, briefly,
+    more in helpless rage than in sorrow,
+    and Billy trying to comfort me.
+    But I really don't remember that evening at all.
+    ♪ Mother dear, May I go downtown ♪
+    ♪ Instead of out to play, ♪
+    ♪ And march the streets of Birmingham ♪
+    
+    ♪ In a Freedom March today? ♪
+    
+    ♪ But Mother, I won't be alone ♪
+    ♪ Other children will go with me, ♪
+    
+    ♪ And march the streets of Birmingham ♪
+    
+    ♪ To make my country free ♪
+    
+    Baldwin: The church was packed.
+    In the pew before me sat Marlon Brando,
+    Sammy Davis, Eartha Kitt.
+    Sidney Poitier nearby.
+    I saw Harry Belafonte sitting next to Coretta King.
+    
+    I have a childhood hand over thing
+    about not weeping in public.
+    I was concentrating on holding myself together.
+    I did not want to weep for Martin.
+    Tears seemed futile.
+    But I may also have been afraid,
+    and I could not have been the only one,
+    that if I began to weep, I would not be able to stop.
+    
+    I started to cry, and I stumbled.
+    Sammy grabbed my arm.
+    
+    The story of the Negro in America
+    is the story of America.
+    It is not a pretty story.
+    
+    What can we do?
+    Well, I am tired.
+    I don't know how it will come about,
+    I know that no matter how it comes about,
+    it will be bloody, it will be hard.
+    I still believe that we can do with this country
+    something that has not been done before.
+    We are misled here because we think of numbers.
+    You don't need numbers, you need passion.
+    And this is proven by the history of the world.
+    The tragedy is that most of the people
+    who say they care about it do not care.
+    What they care about is their safety and their profits.
+    ♪ When I was laying in jail ♪
+    ♪ With my back turned to the wall ♪
+    
+    ♪ When I was laying in jail ♪
+    ♪ With my back turned to the wall ♪
+    
+    ♪ I just laid down and dreamed I could... ♪
+    Baldwin: The American way of life
+    has failed to make people happier,
+    or make them better.
+    We do not want to admit this, and we do not admit it.
+    We persist in believing
+    that the empty and criminal among our children
+    are the result of some miscalculation in the formula
+    that can be corrected.
+    That the bottomless and aimless hostility
+    which makes our cities among the most dangerous in the world
+    is created and felt by a handful of aberrants,
+    that the lack, yawning everywhere in this country,
+    of passionate conviction, of personal authority,
+    proves only our rather appealing tendency to be gregarious
+    and democratic.
+    To look around the United States today,
+    is enough to make prophets and angels weep.
+    This is not the land of the free.
+    It is only very unwillingly and sporadically...
+    (gun clicks)
+    ...the home of the brave.
+    (gunshot)
+    (screaming)
+    - (gunshot) - (screaming)
+    (sobbing)
+    (gunshot)
+    (camera clicks)
+    Baldwin: I sometimes feel it to be an absolute miracle
+    that the entire black population of the United States of America
+    has not long ago succumbed to raging paranoia.
+    People finally say to you,
+    in an attempt to dismiss the social reality,
+    "But you're so bitter!"
+    
+    Well, I may or may not be bitter,
+    but if I were, I would have good reasons for it.
+    
+    Chief among them that American blindness, or cowardice,
+    which allow us to pretend that life presents no reasons
+    for being bitter.
+    
+    In this country, for a dangerously long time,
+    there have been two levels of experience.
+    One, to put it cruelly,
+    can be summed up in the images of Gary Cooper and Doris Day,
+    two of the most grotesque appeals to innocence
+    the world has ever seen.
+    And the other, subterranean, indispensable,
+    and denied, can be summed up, let us say,
+    in the tone and in the face of Ray Charles.
+    ♪ Hey mama, Don't you treat me wrong ♪
+    ♪ Come and love your daddy All night long ♪
+    
+    ♪ I know it's all right now Hey, hey ♪
+    
+    ♪ When you see me in misery ♪
+    ♪ Come on baby, see about me ♪
+    Baldwin: There has never been any genuine confrontation
+    between these two levels of experience.
+    
+    ♪ Should I be bad ♪
+    ♪ Or nice? ♪
+    ♪ Should I surrender? ♪
+    ♪ His pleading words so tenderly ♪
+    
+    ♪ Entreat me ♪
+    
+    ♪ Is this the night that love ♪
+    
+    ♪ Finally defeats me? ♪
+    
+    Baldwin: You cannot lynch me and keep me in ghettos
+    
+    without becoming something monstrous yourselves.
+    And furthermore, you give me a terrifying advantage.
+    
+    You never had to look at me.
+    I had to look at you.
+    I know more about you than you know about me.
+    
+    Not everything that is faced can be changed,
+    but nothing can be changed until it is faced.
+    
+    History is not the past.
+    It is the present.
+    We carry our history with us.
+    We are our history.
+    If we pretend otherwise, we literally are criminals.
+    
+    I attest to this.
+    The world is not white.
+    It never was white,
+    cannot be white.
+    White is a metaphor for power,
+    
+    and that is simply a way of describing Chase Manhattan Bank.
+    
+    I can't be a pessimist,
+    because I'm alive.
+    To be a pessimist means you have agreed that human life
+    is an academic matter, so I'm forced to be an optimist.
+    I am forced to believe that we can survive
+    whatever we must survive.
+    But...
+    
+    ...the Negro in this country...
+    ...the future of the Negro in this country...
+    ...is precisely as bright
+    or as dark as the future of the country.
+    It is entirely up to the American people
+    and our representatives.
+    It is entirely up to the American people
+    whether or not they are going to face and deal with
+    and embrace the stranger they have maligned so long.
+    What white people have to do is try to find out,
+    in their own hearts, why it was necessary
+    to have a "nigger" in the first place,
+    because I'm not a nigger, I'm a man.
+    But if you think I'm a nigger, it means you need him.
+    The question you've got to ask yourself,
+    the white population of this country has got to ask itself,
+    North and South, because it's one country,
+    and for the Negro,
+    there is no difference between the North and the South...
+    it's just a difference in the way they castrate you,
+    but the fact of the castration is American fact.
+    
+    If I'm not the nigger here and you invented him,
+    you the white people invented him,
+    then you've got to find out why.
+    And the future of the country depends on that,
+    whether or not it's able to ask that question.
+    
+    ♪ ("The Blacker the Berry" by Kendrick Lamar plays) ♪
 </h1>
