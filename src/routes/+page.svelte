@@ -23,3 +23,6 @@
 <a href = "articles/lecture9">
     <h1>Lecture 9</h1>
 </a>
+<a href = "articles/Lab3">
+    <h1>Lab 3</h1>
+</a>
