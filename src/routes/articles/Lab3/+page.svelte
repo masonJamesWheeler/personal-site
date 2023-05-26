@@ -1,5 +1,6 @@
-<h1>
-    /**
+<script>
+ let code = `
+        /**
     * @file demo1.ino
     * @brief This file contains the code for Lab03 demo1. The authors of this file are Mason Wheeler and Joey Pirich.
     */
@@ -124,9 +125,8 @@
    }
    }
    
-</h1>
 
-<h1>/**
+/**
     * @file demo2.ino
     * @brief This file was authored by Mason Wheeler and Joey Pirich.
     * 
@@ -489,9 +489,7 @@
      // set output pins for task1
      LED_DDR |= BIT2; // set bit 2 in LED_DDR to 1 to make it an output pin
    }
-   </h1>
 
-<h1>
     /**
  * @file demo3.ino
  * @brief This file contains the implementation of a multitasking system using DDS and Timer 3 Interrupt.
@@ -1006,9 +1004,7 @@ void DDSSetup() {
 }
 
 
-</h1>
 
-<h1>
     /**
  * @file demo4.ino
  * @brief This file contains the code for a scheduler that manages multiple tasks on an Arduino board. 
@@ -1462,9 +1458,7 @@ void ledSetup() {
   LED_DDR |= BIT2;
 }
 
-</h1>
 
-<h1>
     /**
  * @file demo5.ino
  * @brief This file was authored by Mason Wheeler and Joey Pirich. It contains the implementation of a scheduler loop and various helper functions for task management. 
@@ -2107,9 +2101,7 @@ void DDSSetup() {
   }
 }
 
-</h1>
 
-<h1>
     /**
  * @file demo6.ino
  * @brief This file contains the code for a scheduler loop that runs multiple tasks on an Arduino board. 
@@ -2802,5 +2794,14 @@ void DDSSetup() {
     deadTasks[i].state = DEAD;
   }
 }
+`
 
-</h1>
+</script>
+
+<pre>
+    <code>
+        {@html code}
+    </code>
+</pre>
+
+
