@@ -26,3 +26,6 @@
 <a href = "articles/Lab3">
     <h1>Lab 3</h1>
 </a>
+<a href = "articles/Lab_template">
+    <h1>Lab Template</h1>
+</a>
