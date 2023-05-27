@@ -1,7 +1,5 @@
 <script>
-	import { text } from "svelte/internal";
-
-text = `Lab 2: Melodies and LED’s, but it's not a Rave.
+let text = `Lab 2: Melodies and LED’s, but it's not a Rave.
 Mason Wheeler, 2032634
 Joseph Pirich, 2042211 12-Apr-2023
 Assignment: ECE474 Lab 2
