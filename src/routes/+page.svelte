@@ -29,3 +29,6 @@
 <a href = "articles/resource3">
     <h1>Resource 3</h1>
 </a>
+<a href = "articles/interview_study">
+    <h1>Interview Study</h1>
+</a>
