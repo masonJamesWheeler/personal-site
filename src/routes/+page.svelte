@@ -20,12 +20,12 @@
     <ArticleHeader title = {article.title} description = {article.description} date = {article.date} tags = {article.tags}, url = {article.url} />
 {/each}
 </body>
-<a href = "articles/lecture9">
-    <h1>Lecture 9</h1>
+<a href = "articles/resource1">
+    <h1>Resource 1</h1>
 </a>
-<a href = "articles/Lab3">
-    <h1>Lab 3</h1>
+<a href = "articles/resource2">
+    <h1>Resource 2</h1>
 </a>
-<a href = "articles/Lab_template">
-    <h1>Lab Template</h1>
+<a href = "articles/resource3">
+    <h1>Resource 3</h1>
 </a>
